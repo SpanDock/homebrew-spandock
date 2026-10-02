@@ -3,9 +3,9 @@
 cask "spandock" do
   arch arm: "arm64", intel: "amd64"
 
-  version "0.6.3"
-  sha256 arm:   "036d7c66915500200af5e6d9e28cc050d8c17dfe2d8b3fbbccd0d480331d8229",
-         intel: "d57f207639f1657ccb45703fc3a5a664f9595af84e88095cd8f1821991028d49"
+  version "0.6.4"
+  sha256 arm:   "19c45170df1bb233c268c73c4e9a666e41c001021d4728376816afc66c8a12ab",
+         intel: "67e38a4c7cfbb8aadaf6a03f14e63d4f76a6785a96eab66216b12573c587b989"
 
   url "https://github.com/h4ux/spandock-releases/releases/download/v#{version}/SpanDock-macos-#{arch}.zip"
   name "SpanDock"
