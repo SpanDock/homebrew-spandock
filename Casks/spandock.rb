@@ -19,15 +19,18 @@ cask "spandock" do
 
   # SpanDock updates itself; `brew upgrade --greedy` also works.
   auto_updates true
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "SpanDock.app"
 
   # SpanDock is ad-hoc signed until it has a Developer ID, so clear the
   # download quarantine; otherwise macOS asks to "Open Anyway" first.
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/SpanDock.app"]
+  postflight_steps do
+    run "/usr/bin/xattr",
+        args:           ["-dr", "com.apple.quarantine", "{{appdir}}/SpanDock.app"],
+        writable_paths: ["SpanDock.app"],
+        writable_base:  :appdir,
+        must_succeed:   false
   end
 
   uninstall quit: "io.spandock.app"
