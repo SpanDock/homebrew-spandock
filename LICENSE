@@ -1,0 +1,12 @@
+Copyright (c) 2025-2026 Nolatech Ltd.
+
+The Homebrew cask and formula files in this repository may be copied and used
+to install SpanDock with Homebrew.
+
+The software they install, SpanDock, is proprietary software licensed under
+the SpanDock End User License Agreement:
+
+    https://www.spandock.com/legal/eula
+
+Installing SpanDock means you agree to that agreement. "SpanDock" and the
+SpanDock logos are trademarks of Nolatech Ltd.
