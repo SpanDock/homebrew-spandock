@@ -11,23 +11,23 @@ class Spandock < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/SpanDock/spandock-releases/releases/download/v0.8.0/SpanDock-macos-arm64.zip"
-      sha256 "7bdc20b3270fe245614e1d161c8cc06661d42ef557ee531e620c8e75fa7a3178"
+      url "https://github.com/SpanDock/spandock-releases/releases/download/v0.9.0/SpanDock-macos-arm64.zip"
+      sha256 "dd2433438b899c2dff696e0241beb375c7a488bc63546a988a9e88bef7c316d8"
     end
     on_intel do
-      url "https://github.com/SpanDock/spandock-releases/releases/download/v0.8.0/SpanDock-macos-amd64.zip"
-      sha256 "d31c09f65a99709299503e87cb608c2a8f7187cdde4435b7f270a3d1c7aef8e0"
+      url "https://github.com/SpanDock/spandock-releases/releases/download/v0.9.0/SpanDock-macos-amd64.zip"
+      sha256 "143755ffca55eb3525be65e93c2801511a1f6de9b0246c3c375091b4c132c2b7"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/SpanDock/spandock-releases/releases/download/v0.8.0/spandock-linux-arm64.tar.gz"
-      sha256 "21b412017843ef165511093cdd542c0c0526e2c7b89791e20cd14f78558645e4"
+      url "https://github.com/SpanDock/spandock-releases/releases/download/v0.9.0/spandock-linux-arm64.tar.gz"
+      sha256 "9b21cae23287f98a043e61a81aed9199ac6dc4376da4fda43e78930f490e36d0"
     end
     on_intel do
-      url "https://github.com/SpanDock/spandock-releases/releases/download/v0.8.0/spandock-linux-amd64.tar.gz"
-      sha256 "c3f9b414ee3a7cca14b6eed77aefe8e629c9e3de2ff0381d4e1342e48524d261"
+      url "https://github.com/SpanDock/spandock-releases/releases/download/v0.9.0/spandock-linux-amd64.tar.gz"
+      sha256 "3a80a76ac73df85a99fca9dd04b07c4e168be8028b8cad88b69a3e1eac3102a1"
     end
   end
 
@@ -55,10 +55,10 @@ class Spandock < Formula
   def caveats
     <<~EOS
       Choose this machine's mode once, then run it as a service:
-        spandock -role=server -open=false -menubar=false   # Ctrl-C after it starts
+        spandock -role=server -accept-eula -open=false -menubar=false   # Ctrl-C after it starts
         brew services start spandock
 
-      For a client, use -role=client and paste the pairing code in its dashboard.
+      For a client, use -role=client -accept-eula and paste the pairing code in its dashboard.
       Updates: brew upgrade spandock
     EOS
   end
