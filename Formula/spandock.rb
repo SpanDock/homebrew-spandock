@@ -11,23 +11,23 @@ class Spandock < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/SpanDock/spandock-releases/releases/download/v0.11.0/SpanDock-macos-arm64.zip"
-      sha256 "682bee87f351e41de7f2f4b3065feb065e1964c2bcd153ac9b329901ad1518ed"
+      url "https://github.com/SpanDock/spandock-releases/releases/download/v0.12.0/SpanDock-macos-arm64.zip"
+      sha256 "0e8ebd2f0984445174be42d3b0b875181b9b0371d8c5383498dc4b948b76b73c"
     end
     on_intel do
-      url "https://github.com/SpanDock/spandock-releases/releases/download/v0.11.0/SpanDock-macos-amd64.zip"
-      sha256 "85b8242a471d4f78979672e4d8ff36027a1ba0490d7d3f89a5849ef533c53961"
+      url "https://github.com/SpanDock/spandock-releases/releases/download/v0.12.0/SpanDock-macos-amd64.zip"
+      sha256 "10ba47d8dd6f9cb13410fc70350c80d16e5ad5a255b12eea20ea4855322ab262"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/SpanDock/spandock-releases/releases/download/v0.11.0/spandock-linux-arm64.tar.gz"
-      sha256 "cbe11e66d124a2b9bfd3b11a66ccd62eb766cfd5dbd706c1f8640685cf219af5"
+      url "https://github.com/SpanDock/spandock-releases/releases/download/v0.12.0/spandock-linux-arm64.tar.gz"
+      sha256 "562ea6945ddf98290556a413f85d3bc2e8e5eeeeeec94d28b3ad354840e95019"
     end
     on_intel do
-      url "https://github.com/SpanDock/spandock-releases/releases/download/v0.11.0/spandock-linux-amd64.tar.gz"
-      sha256 "06ec4661269844565fa8f6016ec2f1cb0fbcb64fa90e20159321d070aeb880b1"
+      url "https://github.com/SpanDock/spandock-releases/releases/download/v0.12.0/spandock-linux-amd64.tar.gz"
+      sha256 "5fb680f97028e5bbd02cb523d240df83a048de0345b14c2138930802cae91462"
     end
   end
 
@@ -57,6 +57,12 @@ class Spandock < Formula
       Choose this machine's mode once, then run it as a service:
         spandock -role=server -accept-eula -open=false -menubar=false   # Ctrl-C after it starts
         brew services start spandock
+
+      Every server needs a spandock.com account (a Personal license is free). A
+      new server prints a link and a code and waits: approve it on
+      spandock.com, from any device, and it starts. Air-gapped Enterprise:
+      add -license-file FILE. An upgraded server that isn't activated yet:
+      spandock license login
 
       For a client, use -role=client -accept-eula and paste the pairing code in its dashboard.
       Updates: brew upgrade spandock
