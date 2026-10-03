@@ -1,4 +1,4 @@
-# Generated from packaging/homebrew/spandock.cask.rb in h4ux/spandock by
+# Generated from packaging/homebrew/spandock.cask.rb in SpanDock/spandock by
 # the release workflow; edits in the tap are overwritten.
 cask "spandock" do
   arch arm: "arm64", intel: "amd64"
@@ -7,10 +7,10 @@ cask "spandock" do
   sha256 arm:   "7bdc20b3270fe245614e1d161c8cc06661d42ef557ee531e620c8e75fa7a3178",
          intel: "d31c09f65a99709299503e87cb608c2a8f7187cdde4435b7f270a3d1c7aef8e0"
 
-  url "https://github.com/h4ux/spandock-releases/releases/download/v#{version}/SpanDock-macos-#{arch}.zip"
+  url "https://github.com/SpanDock/spandock-releases/releases/download/v#{version}/SpanDock-macos-#{arch}.zip"
   name "SpanDock"
   desc "Local OpenTelemetry gateway and dashboards for AI coding tools"
-  homepage "https://github.com/h4ux/spandock-releases"
+  homepage "https://github.com/SpanDock/spandock-releases"
 
   livecheck do
     url :url

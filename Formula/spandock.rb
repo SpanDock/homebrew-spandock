@@ -1,8 +1,8 @@
-# Generated from packaging/homebrew/spandock.formula.rb in h4ux/spandock by
+# Generated from packaging/homebrew/spandock.formula.rb in SpanDock/spandock by
 # the release workflow; edits in the tap are overwritten.
 class Spandock < Formula
   desc "Local OpenTelemetry gateway and dashboards for AI coding tools"
-  homepage "https://github.com/h4ux/spandock-releases"
+  homepage "https://github.com/SpanDock/spandock-releases"
 
   livecheck do
     url :stable
@@ -11,22 +11,22 @@ class Spandock < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/h4ux/spandock-releases/releases/download/v0.8.0/SpanDock-macos-arm64.zip"
+      url "https://github.com/SpanDock/spandock-releases/releases/download/v0.8.0/SpanDock-macos-arm64.zip"
       sha256 "7bdc20b3270fe245614e1d161c8cc06661d42ef557ee531e620c8e75fa7a3178"
     end
     on_intel do
-      url "https://github.com/h4ux/spandock-releases/releases/download/v0.8.0/SpanDock-macos-amd64.zip"
+      url "https://github.com/SpanDock/spandock-releases/releases/download/v0.8.0/SpanDock-macos-amd64.zip"
       sha256 "d31c09f65a99709299503e87cb608c2a8f7187cdde4435b7f270a3d1c7aef8e0"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/h4ux/spandock-releases/releases/download/v0.8.0/spandock-linux-arm64.tar.gz"
+      url "https://github.com/SpanDock/spandock-releases/releases/download/v0.8.0/spandock-linux-arm64.tar.gz"
       sha256 "21b412017843ef165511093cdd542c0c0526e2c7b89791e20cd14f78558645e4"
     end
     on_intel do
-      url "https://github.com/h4ux/spandock-releases/releases/download/v0.8.0/spandock-linux-amd64.tar.gz"
+      url "https://github.com/SpanDock/spandock-releases/releases/download/v0.8.0/spandock-linux-amd64.tar.gz"
       sha256 "c3f9b414ee3a7cca14b6eed77aefe8e629c9e3de2ff0381d4e1342e48524d261"
     end
   end
