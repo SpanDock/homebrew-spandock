@@ -11,23 +11,23 @@ class Spandock < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/SpanDock/spandock-releases/releases/download/v0.41.0/SpanDock-macos-arm64.zip"
-      sha256 "31538ba7d078977dc27c08039b4b4723d185198e21f351451e11b7e0e204ce28"
+      url "https://github.com/SpanDock/spandock-releases/releases/download/v0.42.0/SpanDock-macos-arm64.zip"
+      sha256 "46a94152fa8ce3623fd8bf4f9956bb902ac2b77b8f83a58d0af5f3a7d4e179da"
     end
     on_intel do
-      url "https://github.com/SpanDock/spandock-releases/releases/download/v0.41.0/SpanDock-macos-amd64.zip"
-      sha256 "b1b0a0c6380b1c5b4c8cc047605b86fd1046bc098d71f5297ebead235a0a3bcd"
+      url "https://github.com/SpanDock/spandock-releases/releases/download/v0.42.0/SpanDock-macos-amd64.zip"
+      sha256 "88becba22cdea3421be194afd1b3c196a84bc425c25e13c4f2800bcaf6fd7769"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/SpanDock/spandock-releases/releases/download/v0.41.0/spandock-linux-arm64.tar.gz"
-      sha256 "a9e890b73fbcb9484395046148a016eac53f0139cdbb93d1d27a5808bdce8945"
+      url "https://github.com/SpanDock/spandock-releases/releases/download/v0.42.0/spandock-linux-arm64.tar.gz"
+      sha256 "ecdcb27ab43185550dec5874451f7a2dade9e8e3352463f697a132aac863c9aa"
     end
     on_intel do
-      url "https://github.com/SpanDock/spandock-releases/releases/download/v0.41.0/spandock-linux-amd64.tar.gz"
-      sha256 "739ce1e830e8c169028b3d0334f488b0d31c939a9dce6ddd9ba56d65806c99ee"
+      url "https://github.com/SpanDock/spandock-releases/releases/download/v0.42.0/spandock-linux-amd64.tar.gz"
+      sha256 "df3aa5c532a8804f6508b9952f4d8471b5a0cbe0cd69059f11c281011dc83089"
     end
   end
 
